@@ -13,6 +13,9 @@ The system enables:
 - Deployment in constrained and latency-sensitive environments  
 
 ---
+<p align="center">
+  <img src="assets/diagrams/architecture.png" width="720"/>
+</p>
 
 ## System Positioning
 
