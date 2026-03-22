@@ -1,5 +1,5 @@
 # PeachBot Core
-### Distributed, Biologically-Aware Edge Intelligence System
+### Distributed Edge Intelligence System with Biologically-Aware Computation
 
 ---
 
@@ -9,7 +9,7 @@ PeachBot Core is the foundational system layer of the PeachBot platform, designe
 
 The system enables:
 - Real-time intelligence at the point of data generation  
-- Continuous local learning with system-wide consistency  
+- Structured local intelligence generation with system-level consistency 
 - Deployment in constrained and latency-sensitive environments  
 
 ---
@@ -54,35 +54,54 @@ The system integrates four primary layers:
 
 > The cloud supports coordination — not centralized training.
 
+All primary computation, state evolution, and decision-making occur at the edge, with cloud components limited to aggregation and coordination.
+
 ---
 
 ## Core Frameworks
 
 ### FILA — Federated Intelligence & Learning Architecture
-- Local training at edge nodes  
-- Aggregated learning without raw data transfer  
-- Scalable, privacy-aware system intelligence  
+- Local intelligence generation and state evolution at edge nodes  
+- Structured session-level exports to aggregation layer  
+- Aggregation without raw data transfer  
+- Registry-driven validation and coordination 
 
 ---
 
 ### SBC — Synthetic Biological Computation
-- Biologically-inspired adaptive computation  
-- State-aware learning behavior  
-- Continuous system evolution  
+
+SBC defines the internal computational model of PeachBot Core, where system behavior evolves through structured state transitions rather than static inference.
+
+Key characteristics:
+
+- State-centric computation  
+  → system intelligence is represented as evolving structured state (not isolated predictions)
+
+- Signal-driven updates  
+  → inputs are interpreted as biological or environmental signals that modify system state
+
+- Context persistence  
+  → historical state influences current decision pathways
+
+- Tiered response behavior  
+  → outputs are generated through layered evaluation (e.g., safety tiers, alert levels)
+
+SBC enables the system to behave more like an adaptive biological process than a stateless AI model.
 
 ---
 
 ### Edge SoC Integration
 - Hardware–software co-design  
-- Embedded AI acceleration  
-- Efficient real-time execution  
+- Hardware-aware execution design  
+- Compatibility with embedded AI accelerators 
+- Optimized real-time inference pathways    
 
 ---
 
 ## Key Characteristics
 
 - Edge-first execution  
-- Distributed learning systems  
+- Distributed intelligence coordination  
 - Real-time adaptive decision-making  
 - Minimal data centralization  
 - Deployment-oriented system design  
@@ -109,7 +128,7 @@ PeachBot Core is currently in:
 
 - Core architecture implemented and documented  
 - Edge intelligence modules under active development  
-- Initial deployment scenarios validated (environmental systems)  
+- Initial deployment scenarios simulated and validated in controlled environments (environmental systems)  
 - Ongoing integration across clinical, environmental, and agricultural domains  
 
 ---
@@ -130,6 +149,18 @@ PeachBot Core supports:
 - Clinical intelligence systems (MedAI+)  
 - Environmental monitoring networks (Eco)  
 - Agricultural intelligence systems (AgriAI)  
+
+---
+## Execution Model
+
+PeachBot Core operates using an edge-first execution model:
+
+- All primary computation occurs locally on-device  
+- System state is maintained and evolved at the edge  
+- Outputs are generated through structured evaluation pipelines  
+- Only structured summaries are exported for aggregation  
+
+This ensures low-latency operation, privacy preservation, and deployment viability in constrained environments.
 
 ---
 
@@ -159,7 +190,10 @@ PeachBot Core is built on the following principles:
   → hardware, models, and orchestration are co-designed  
 
 - **Deployment-oriented engineering**  
-  → systems are designed for real-world constraints, not ideal environments  
+  → systems are designed for real-world constraints, not ideal environments
+
+- **State-centric computation (SBC)**  
+  → intelligence evolves through structured state transitions rather than isolated predictions 
 
 ---
 
@@ -175,7 +209,8 @@ These systems operate in:
 
 - Low-connectivity environments  
 - Resource-constrained hardware settings  
-- Real-time decision-making scenarios  
+- Real-time decision-making scenarios
+- Heterogeneous edge environments (microcontrollers, SBCs, and PC-based systems)  
 
 ---
 ## Contributing

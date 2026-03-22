@@ -1,0 +1,23 @@
+{
+  "id": "20260322120114",
+  "start_time": "2026-03-22T12:01:14.780597",
+  "records": [
+    {
+      "timestamp": "2026-03-22T12:01:28.670145",
+      "input": "low oxygen pests",
+      "state": {
+        "water_quality": "normal",
+        "oxygen_level": "low",
+        "pollution": false,
+        "alerts": [
+          "Low dissolved oxygen level"
+        ]
+      },
+      "alert": {
+        "level": "WARNING",
+        "message": "Low oxygen level detected"
+      },
+      "decision": null
+    }
+  ]
+}

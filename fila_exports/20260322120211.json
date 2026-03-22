@@ -1,0 +1,21 @@
+{
+  "id": "20260322120211",
+  "start_time": "2026-03-22T12:02:11.951777",
+  "records": [
+    {
+      "timestamp": "2026-03-22T12:02:22.838283",
+      "input": "pests",
+      "state": {
+        "soil_moisture": "normal",
+        "pest_risk": false,
+        "crop_health": "stable",
+        "alerts": []
+      },
+      "alert": {
+        "level": "INFO",
+        "message": "Crop conditions stable"
+      },
+      "decision": null
+    }
+  ]
+}
