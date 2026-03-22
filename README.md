@@ -113,7 +113,6 @@ PeachBot Core is currently in:
 - Ongoing integration across clinical, environmental, and agricultural domains  
 
 ---
----
 
 ## Documentation
 
@@ -143,6 +142,52 @@ PeachBot Core supports:
 - Deployment-oriented architecture  
 
 ---
+## Design Philosophy
+
+PeachBot Core is built on the following principles:
+
+- **Edge-first intelligence**  
+  → computation occurs at the point of data generation  
+
+- **Distributed learning systems**  
+  → intelligence emerges across nodes, not from a central model  
+
+- **Minimal data centralization**  
+  → raw data remains local wherever possible  
+
+- **System-level integration**  
+  → hardware, models, and orchestration are co-designed  
+
+- **Deployment-oriented engineering**  
+  → systems are designed for real-world constraints, not ideal environments  
+
+---
+
+## Deployment Context
+
+PeachBot Core is designed to support:
+
+- Clinical intelligence systems (MedAI+)  
+- Environmental monitoring networks (Eco)  
+- Agricultural intelligence platforms (AgriAI)  
+
+These systems operate in:
+
+- Low-connectivity environments  
+- Resource-constrained hardware settings  
+- Real-time decision-making scenarios  
+
+---
+## Contributing
+
+Contributions are welcome in areas including:
+
+- Edge AI systems  
+- Distributed learning architectures  
+- Biological intelligence modeling  
+- Deployment infrastructure  
+
+Please refer to [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 
 ## Note
 
