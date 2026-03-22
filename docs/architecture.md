@@ -11,6 +11,8 @@ It enables:
 * Real-time inference in constrained environments
 * Context-aware adaptive behavior
 * Structured system-wide intelligence through controlled aggregation
+* Day-1 decision capability through integrated knowledge layer
+* Continuous improvement through state-driven adaptation (SBC)
 
 ---
 
@@ -44,7 +46,22 @@ PeachBot Core follows a federated coordination model:
 
 ---
 
-### 3. State-Centric Computation (SBC)
+### 3. Knowledge-Driven Initialization
+
+PeachBot Core integrates domain knowledge to enable immediate usability.
+
+**Characteristics:**
+
+* Predefined rules and structured knowledge
+* Domain-specific (clinical, environmental, agricultural, biological)
+* Fully local and edge-deployable
+
+**Outcome:**
+
+* Day-1 decision capability
+* Reduced cold-start dependency
+
+### 4. State-Centric Computation (SBC)
 
 Synthetic Biological Computation (SBC) defines the internal computational model.
 
@@ -62,7 +79,7 @@ This enables adaptive, context-aware system behavior aligned with real-world dyn
 
 ---
 
-### 4. Hardware–Software Co-Design (Edge SoC)
+### 5. Hardware–Software Co-Design (Edge SoC)
 
 Execution is aligned with hardware constraints:
 
@@ -72,7 +89,7 @@ Execution is aligned with hardware constraints:
 
 ---
 
-### 5. Governed Coordination
+### 6. Governed Coordination
 
 A coordination layer ensures system integrity:
 
@@ -109,7 +126,24 @@ Handles real-world signal acquisition across domains:
 
 ---
 
-### 2. Edge Intelligence Layer (SBC Engine)
+### 2. Knowledge Layer
+
+Provides domain-specific knowledge for Day-1 system capability.
+
+**Sources:**
+- Clinical guidelines (MedAI)
+- Environmental thresholds (Eco)
+- Agricultural rules (AgriAI)
+- Biological priors (Bio)
+
+**Functions:**
+- Enrich structured signals before SBC processing
+- Provide baseline decision support without training
+- Operate fully on-device (no cloud dependency)
+
+---
+
+### 3. Edge Intelligence Layer (SBC Engine)
 
 Core execution layer of the system.
 
@@ -119,6 +153,7 @@ Core execution layer of the system.
 * Signal processing and inference
 * Local adaptation and state evolution
 * Biological network processing (Bio module)
+* Receives knowledge-enriched signals from Knowledge Layer
 
 **Characteristics:**
 
@@ -129,7 +164,7 @@ Core execution layer of the system.
 
 ---
 
-### 3. Coordination & Orchestration Layer
+### 4. Coordination & Orchestration Layer
 
 System governance and control layer.
 
@@ -142,7 +177,7 @@ System governance and control layer.
 
 ---
 
-### 4. Cloud Aggregation Layer (FILA)
+### 5. Cloud Aggregation Layer (FILA)
 
 Supports system-wide intelligence without centralization.
 
@@ -173,6 +208,7 @@ The cloud supports coordination — not centralized training.
 * Enables temporal and weighted adaptation
 * Tracks relationships between signals
 * Produces priority-driven system behavior
+SBC operates in conjunction with the Knowledge Layer, combining predefined domain knowledge with evolving state-driven behavior.
 
 ---
 
@@ -187,6 +223,9 @@ The SBC framework produces graph-compatible structures:
 This enables integration with constraint-aware graph learning systems such as Edge-GNN, designed for operation under memory and latency constraints in edge environments.
 
 SBC provides structured state representation, while Edge-GNN provides the learning mechanism.
+
+* Bio module provides primary structured input for graph-based workflows
+
 
 ---
 
@@ -208,19 +247,22 @@ Through SBC:
 
 This enables compatibility with graph-based learning systems and future system-on-chip implementations for biological AI.
 
+* Acts as the primary interface for graph-based biological learning (Edge-GNN)
+
 ---
 
 ## Data Flow
 
 1. Signals are generated at the interface layer
-2. Processed and interpreted at the edge
-3. SBC updates system state
-4. State evolves through temporal and relational dynamics
-5. System priority is computed
-6. Decisions are generated locally
-7. Structured outputs are optionally exported
-8. Aggregation and validation occur via FILA
-9. Updated models are redistributed
+2. Signals are enriched using the Knowledge Layer
+3. Enriched signals are processed at the edge
+4. SBC updates system state
+5. State evolves through temporal and relational dynamics
+6. System priority is computed
+7. Decisions are generated locally
+8. Structured outputs are optionally exported
+9. Aggregation and validation occur via FILA
+10. Updated models are redistributed
 
 ---
 
@@ -229,10 +271,11 @@ This enables compatibility with graph-based learning systems and future system-o
 PeachBot Core follows a state-driven execution pipeline:
 
 1. Input → structured signal
-2. Signal → SBC state update
-3. State → temporal + relational evolution
-4. State → priority computation
-5. Priority → decision output
+2. Signal → Knowledge enrichment
+3. Enriched signal → SBC state update
+4. State → temporal + relational evolution
+5. State → priority computation
+6. Priority → decision output
 
 This ensures:
 
@@ -306,4 +349,4 @@ PeachBot Core combines:
 * Synthetic Biological Computation (how intelligence emerges)
 * Federated Intelligence & Learning Architecture (how systems coordinate)
 
-This results in a distributed, adaptive intelligence system capable of operating across clinical, environmental, agricultural, and biological domains.
+This results in a distributed, adaptive intelligence system combining knowledge-driven initialization with state-driven evolution, operating across clinical, environmental, agricultural, and biological domains.

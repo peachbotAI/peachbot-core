@@ -1,0 +1,11 @@
+[
+  {
+    "conditions": {
+      "symptom": "fever",
+      "temperature": "high"
+    },
+    "tags": ["infection_risk"],
+    "weight": 3,
+    "note": "High fever indicates possible infection"
+  }
+]

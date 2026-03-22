@@ -1,0 +1,15 @@
+[
+  {
+    "conditions": {
+      "symptoms": [
+        "fever"
+      ],
+      "severity": "low"
+    },
+    "tags": [
+      "adaptive_pattern"
+    ],
+    "weight": 1.9,
+    "note": "Reinforced adaptive pattern"
+  }
+]

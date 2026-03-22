@@ -1,7 +1,15 @@
 from core.node.banner import show_banner
 from core.node.mode import select_mode
 from core.io.input_handler import get_input
-from core.node.ui import print_context, print_state, print_alert, print_decision, print_divider
+from core.node.ui import (
+    print_context,
+    print_state,
+    print_alert,
+    print_decision,
+    print_divider,
+    print_confidence,      # 🧠 NEW
+    print_attribution      # 🧠 NEW
+)
 
 from core.engine.runner import execute
 
@@ -54,10 +62,20 @@ def run():
         # Execute selected module
         result = execute(mode, data)
 
-        # --- DOMAIN-SPECIFIC OUTPUT ---
+        # ==============================
+        # DOMAIN-SPECIFIC OUTPUT
+        # ==============================
         if mode == "medai":
             print_state(result["state"])
             print_alert(result["alert"])
+
+            # 🧠 NEW: Confidence
+            if "confidence" in result:
+                print_confidence(result["confidence"])
+
+            # 🔍 NEW: Attribution
+            if "attribution" in result:
+                print_attribution(result["attribution"])
 
         elif mode == "eco":
             print("\n🌿 ECO SYSTEM STATE")
@@ -80,21 +98,29 @@ def run():
             print("\n🧬 BIO INSIGHT")
             print(result["alert"]["message"])
 
-        # --- CONTEXT (ONLY FOR MEDAI / SBC) ---
+        # ==============================
+        # CONTEXT (SBC)
+        # ==============================
         if "context" in result:
             print_context(result["context"])
 
-        # --- DECISION (ONLY FOR MEDAI) ---
+        # ==============================
+        # DECISION (MEDAI)
+        # ==============================
         decision = None
 
         if result.get("decision_required"):
             decision = handle_decision(result["alert"])
             print_decision(decision)
 
-        # --- SESSION LOGGING ---
+        # ==============================
+        # SESSION LOGGING
+        # ==============================
         add_record(data["text"], result["state"], result["alert"], decision)
 
-        # --- UI ---
+        # ==============================
+        # UI FOOTER
+        # ==============================
         print("\n(Type 'exit' to end session)")
         print_divider()
 

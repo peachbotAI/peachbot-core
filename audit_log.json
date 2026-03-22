@@ -141,5 +141,588 @@
       "decision": "ack",
       "reason": ""
     }
+  },
+  {
+    "timestamp": "2026-03-22T14:15:06.751587",
+    "event": {
+      "alert": {
+        "level": "CRITICAL",
+        "message": "System-wide critical condition detected"
+      },
+      "decision": "ack",
+      "reason": ""
+    }
+  },
+  {
+    "timestamp": "2026-03-22T14:15:18.184211",
+    "event": {
+      "alert": {
+        "level": "CRITICAL",
+        "message": "System-wide critical condition detected"
+      },
+      "decision": "ack",
+      "reason": ""
+    }
+  },
+  {
+    "timestamp": "2026-03-22T14:29:13.039542",
+    "event": {
+      "alert": {
+        "level": "INFO",
+        "message": "No critical condition"
+      },
+      "decision": "ack",
+      "reason": ""
+    }
+  },
+  {
+    "timestamp": "2026-03-22T14:29:26.342725",
+    "event": {
+      "alert": {
+        "level": "CRITICAL",
+        "message": "High severity condition"
+      },
+      "decision": "ack",
+      "reason": ""
+    }
+  },
+  {
+    "timestamp": "2026-03-22T14:29:44.053127",
+    "event": {
+      "alert": {
+        "level": "INFO",
+        "message": "No critical condition"
+      },
+      "decision": "ack",
+      "reason": ""
+    }
+  },
+  {
+    "timestamp": "2026-03-22T14:30:03.416706",
+    "event": {
+      "alert": {
+        "level": "INFO",
+        "message": "No critical condition"
+      },
+      "decision": "ack",
+      "reason": ""
+    }
+  },
+  {
+    "timestamp": "2026-03-22T14:31:42.030080",
+    "event": {
+      "alert": {
+        "level": "INFO",
+        "message": "No critical condition"
+      },
+      "decision": "ack",
+      "reason": ""
+    }
+  },
+  {
+    "timestamp": "2026-03-22T14:35:51.051460",
+    "event": {
+      "alert": {
+        "level": "INFO",
+        "message": "No critical condition"
+      },
+      "decision": "ack",
+      "reason": ""
+    }
+  },
+  {
+    "timestamp": "2026-03-22T14:36:00.134630",
+    "event": {
+      "alert": {
+        "level": "INFO",
+        "message": "No critical condition"
+      },
+      "decision": "ack",
+      "reason": ""
+    }
+  },
+  {
+    "timestamp": "2026-03-22T14:36:24.594335",
+    "event": {
+      "alert": {
+        "level": "CRITICAL",
+        "message": "High severity condition"
+      },
+      "decision": "ack",
+      "reason": ""
+    }
+  },
+  {
+    "timestamp": "2026-03-22T14:39:14.552780",
+    "event": {
+      "alert": {
+        "level": "INFO",
+        "message": "No critical condition"
+      },
+      "decision": "ack",
+      "reason": ""
+    }
+  },
+  {
+    "timestamp": "2026-03-22T14:39:20.054725",
+    "event": {
+      "alert": {
+        "level": "INFO",
+        "message": "No critical condition"
+      },
+      "decision": "ack",
+      "reason": ""
+    }
+  },
+  {
+    "timestamp": "2026-03-22T14:39:37.541543",
+    "event": {
+      "alert": {
+        "level": "INFO",
+        "message": "No critical condition"
+      },
+      "decision": "ack",
+      "reason": ""
+    }
+  },
+  {
+    "timestamp": "2026-03-22T14:43:47.066848",
+    "event": {
+      "alert": {
+        "level": "INFO",
+        "message": "No critical condition"
+      },
+      "decision": "ack",
+      "reason": ""
+    }
+  },
+  {
+    "timestamp": "2026-03-22T14:43:59.658645",
+    "event": {
+      "alert": {
+        "level": "INFO",
+        "message": "No critical condition"
+      },
+      "decision": "ack",
+      "reason": ""
+    }
+  },
+  {
+    "timestamp": "2026-03-22T14:44:07.051774",
+    "event": {
+      "alert": {
+        "level": "INFO",
+        "message": "No critical condition"
+      },
+      "decision": "ack",
+      "reason": ""
+    }
+  },
+  {
+    "timestamp": "2026-03-22T14:44:16.175946",
+    "event": {
+      "alert": {
+        "level": "INFO",
+        "message": "No critical condition"
+      },
+      "decision": "ack",
+      "reason": ""
+    }
+  },
+  {
+    "timestamp": "2026-03-22T14:59:10.815781",
+    "event": {
+      "alert": {
+        "level": "CRITICAL",
+        "message": "System-wide critical condition detected"
+      },
+      "decision": "ack",
+      "reason": ""
+    }
+  },
+  {
+    "timestamp": "2026-03-22T14:59:19.015460",
+    "event": {
+      "alert": {
+        "level": "CRITICAL",
+        "message": "System-wide critical condition detected"
+      },
+      "decision": "ack",
+      "reason": ""
+    }
+  },
+  {
+    "timestamp": "2026-03-22T14:59:30.183634",
+    "event": {
+      "alert": {
+        "level": "CRITICAL",
+        "message": "System-wide critical condition detected"
+      },
+      "decision": "ack",
+      "reason": ""
+    }
+  },
+  {
+    "timestamp": "2026-03-22T14:59:36.576372",
+    "event": {
+      "alert": {
+        "level": "WARNING",
+        "message": "Elevated multi-factor condition"
+      },
+      "decision": "ack",
+      "reason": ""
+    }
+  },
+  {
+    "timestamp": "2026-03-22T14:59:42.366870",
+    "event": {
+      "alert": {
+        "level": "WARNING",
+        "message": "Elevated multi-factor condition"
+      },
+      "decision": "ack",
+      "reason": ""
+    }
+  },
+  {
+    "timestamp": "2026-03-22T15:06:27.531023",
+    "event": {
+      "alert": {
+        "level": "CRITICAL",
+        "message": "System-wide critical condition detected"
+      },
+      "decision": "ack",
+      "reason": ""
+    }
+  },
+  {
+    "timestamp": "2026-03-22T15:11:17.571542",
+    "event": {
+      "alert": {
+        "level": "CRITICAL",
+        "message": "System-wide critical condition detected"
+      },
+      "decision": "ack",
+      "reason": ""
+    }
+  },
+  {
+    "timestamp": "2026-03-22T15:11:33.614383",
+    "event": {
+      "alert": {
+        "level": "WARNING",
+        "message": "Elevated multi-factor condition"
+      },
+      "decision": "ack",
+      "reason": ""
+    }
+  },
+  {
+    "timestamp": "2026-03-22T15:11:39.385932",
+    "event": {
+      "alert": {
+        "level": "WARNING",
+        "message": "Elevated multi-factor condition"
+      },
+      "decision": "ack",
+      "reason": ""
+    }
+  },
+  {
+    "timestamp": "2026-03-22T15:11:45.272548",
+    "event": {
+      "alert": {
+        "level": "WARNING",
+        "message": "Elevated multi-factor condition"
+      },
+      "decision": "ack",
+      "reason": ""
+    }
+  },
+  {
+    "timestamp": "2026-03-22T15:15:50.846287",
+    "event": {
+      "alert": {
+        "level": "CRITICAL",
+        "message": "System-wide critical condition detected"
+      },
+      "decision": "ack",
+      "reason": ""
+    }
+  },
+  {
+    "timestamp": "2026-03-22T15:16:09.010943",
+    "event": {
+      "alert": {
+        "level": "CRITICAL",
+        "message": "System-wide critical condition detected"
+      },
+      "decision": "ack",
+      "reason": ""
+    }
+  },
+  {
+    "timestamp": "2026-03-22T15:16:18.218447",
+    "event": {
+      "alert": {
+        "level": "CRITICAL",
+        "message": "System-wide critical condition detected"
+      },
+      "decision": "ack",
+      "reason": ""
+    }
+  },
+  {
+    "timestamp": "2026-03-22T15:16:27.631445",
+    "event": {
+      "alert": {
+        "level": "CRITICAL",
+        "message": "System-wide critical condition detected"
+      },
+      "decision": "ack",
+      "reason": ""
+    }
+  },
+  {
+    "timestamp": "2026-03-22T15:16:38.707389",
+    "event": {
+      "alert": {
+        "level": "CRITICAL",
+        "message": "System-wide critical condition detected"
+      },
+      "decision": "ack",
+      "reason": ""
+    }
+  },
+  {
+    "timestamp": "2026-03-22T15:24:12.577652",
+    "event": {
+      "alert": {
+        "level": "CRITICAL",
+        "message": "System-wide critical condition detected"
+      },
+      "decision": "ack",
+      "reason": ""
+    }
+  },
+  {
+    "timestamp": "2026-03-22T15:24:17.237543",
+    "event": {
+      "alert": {
+        "level": "CRITICAL",
+        "message": "System-wide critical condition detected"
+      },
+      "decision": "ack",
+      "reason": ""
+    }
+  },
+  {
+    "timestamp": "2026-03-22T15:24:32.663879",
+    "event": {
+      "alert": {
+        "level": "CRITICAL",
+        "message": "System-wide critical condition detected"
+      },
+      "decision": "ack",
+      "reason": ""
+    }
+  },
+  {
+    "timestamp": "2026-03-22T15:29:25.751148",
+    "event": {
+      "alert": {
+        "level": "INFO",
+        "message": "No critical condition"
+      },
+      "decision": "ack",
+      "reason": ""
+    }
+  },
+  {
+    "timestamp": "2026-03-22T15:29:40.947491",
+    "event": {
+      "alert": {
+        "level": "INFO",
+        "message": "No critical condition"
+      },
+      "decision": "ack",
+      "reason": ""
+    }
+  },
+  {
+    "timestamp": "2026-03-22T15:29:48.980945",
+    "event": {
+      "alert": {
+        "level": "INFO",
+        "message": "No critical condition"
+      },
+      "decision": "ack",
+      "reason": ""
+    }
+  },
+  {
+    "timestamp": "2026-03-22T15:29:54.864340",
+    "event": {
+      "alert": {
+        "level": "INFO",
+        "message": "No critical condition"
+      },
+      "decision": "ack",
+      "reason": ""
+    }
+  },
+  {
+    "timestamp": "2026-03-22T15:30:03.430234",
+    "event": {
+      "alert": {
+        "level": "INFO",
+        "message": "No critical condition"
+      },
+      "decision": "ack",
+      "reason": ""
+    }
+  },
+  {
+    "timestamp": "2026-03-22T15:30:19.001759",
+    "event": {
+      "alert": {
+        "level": "INFO",
+        "message": "No critical condition"
+      },
+      "decision": "ack",
+      "reason": ""
+    }
+  },
+  {
+    "timestamp": "2026-03-22T15:30:24.030709",
+    "event": {
+      "alert": {
+        "level": "INFO",
+        "message": "No critical condition"
+      },
+      "decision": "ack",
+      "reason": ""
+    }
+  },
+  {
+    "timestamp": "2026-03-22T15:35:01.022478",
+    "event": {
+      "alert": {
+        "level": "CRITICAL",
+        "message": "System-wide critical condition detected"
+      },
+      "decision": "ack",
+      "reason": ""
+    }
+  },
+  {
+    "timestamp": "2026-03-22T15:35:07.395622",
+    "event": {
+      "alert": {
+        "level": "CRITICAL",
+        "message": "System-wide critical condition detected"
+      },
+      "decision": "ack",
+      "reason": ""
+    }
+  },
+  {
+    "timestamp": "2026-03-22T15:35:13.619324",
+    "event": {
+      "alert": {
+        "level": "CRITICAL",
+        "message": "System-wide critical condition detected"
+      },
+      "decision": "ack",
+      "reason": ""
+    }
+  },
+  {
+    "timestamp": "2026-03-22T15:39:58.123840",
+    "event": {
+      "alert": {
+        "level": "CRITICAL",
+        "message": "System-wide critical condition detected"
+      },
+      "decision": "ack",
+      "reason": ""
+    }
+  },
+  {
+    "timestamp": "2026-03-22T15:40:04.951396",
+    "event": {
+      "alert": {
+        "level": "CRITICAL",
+        "message": "System-wide critical condition detected"
+      },
+      "decision": "ack",
+      "reason": ""
+    }
+  },
+  {
+    "timestamp": "2026-03-22T15:40:09.452043",
+    "event": {
+      "alert": {
+        "level": "CRITICAL",
+        "message": "System-wide critical condition detected"
+      },
+      "decision": "ack",
+      "reason": ""
+    }
+  },
+  {
+    "timestamp": "2026-03-22T15:45:54.580799",
+    "event": {
+      "alert": {
+        "level": "WARNING",
+        "message": "Elevated multi-factor condition"
+      },
+      "decision": "ack",
+      "reason": ""
+    }
+  },
+  {
+    "timestamp": "2026-03-22T15:46:27.999557",
+    "event": {
+      "alert": {
+        "level": "INFO",
+        "message": "No critical condition"
+      },
+      "decision": "ack",
+      "reason": ""
+    }
+  },
+  {
+    "timestamp": "2026-03-22T15:46:38.039197",
+    "event": {
+      "alert": {
+        "level": "INFO",
+        "message": "No critical condition"
+      },
+      "decision": "ack",
+      "reason": ""
+    }
+  },
+  {
+    "timestamp": "2026-03-22T15:46:46.170074",
+    "event": {
+      "alert": {
+        "level": "INFO",
+        "message": "No critical condition"
+      },
+      "decision": "ack",
+      "reason": ""
+    }
+  },
+  {
+    "timestamp": "2026-03-22T15:46:54.046437",
+    "event": {
+      "alert": {
+        "level": "CRITICAL",
+        "message": "System-wide critical condition detected"
+      },
+      "decision": "ack",
+      "reason": ""
+    }
   }
 ]
