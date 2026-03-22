@@ -1,6 +1,6 @@
 import platform
 import psutil
-
+from core.version import VERSION
 
 def get_system_info():
     return {
@@ -24,32 +24,33 @@ def show_banner():
     """)
 
     print("--------------------------------------------------")
-    print("🧠 PeachBot Core — Multi-Domain Intelligence System")
-    print("👤 Created by: Swapin Vidya")
-    print("🏢 PeachBot Research & Innovation Lab")
+    print("PeachBot Core — Multi-Domain Intelligence System")
+    print(f"Version: {VERSION}")
+    print("Created by: Swapin Vidya")
+    print("PeachBot Research & Innovation Lab")
 
-    print("\n📄 Patent:")
+    print("\n Patent:")
     print("Edge-Based Clinical Intelligence via Graph Neural Networks")
     print("App No: 202541127477")
 
-    print("\n🔒 System Mode:")
+    print("\n System Mode:")
     print("Edge-native | Privacy-preserving | Distributed")
 
     info = get_system_info()
 
-    print("\n⚙️ SYSTEM INFO")
+    print("\n SYSTEM INFO")
     print(f"OS        : {info['os']}")
     print(f"CPU       : {info['cpu']}")
     print(f"Cores     : {info['cores']}")
     print(f"Memory    : {info['ram']} GB")
 
-    print("\n🧩 CORE CONFIG")
+    print("\n CORE CONFIG")
     print("FILA        : Enabled (Federated Learning Layer)")
     print("SBC         : Active (Adaptive Biological Computation)")
     print("Edge-GNN    : Integration Layer (In Progress)")
     print("Orchestrator: Local Node Controller")
 
-    print("\n🌐 ACTIVE DOMAINS")
+    print("\n ACTIVE DOMAINS")
     print("MedAI   | Eco   | AgriAI   | Bio")
 
     print("\n--------------------------------------------------\n")

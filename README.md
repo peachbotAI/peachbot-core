@@ -1,4 +1,5 @@
-# PeachBot Core
+# PeachBot Core 
+**Version:** v0.1.0 
 ### Distributed Edge Intelligence System with Biologically-Aware Computation
 
 ---
