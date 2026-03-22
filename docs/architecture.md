@@ -2,72 +2,85 @@
 
 ## Overview
 
-PeachBot Core is designed as a **distributed, edge-first intelligence system** where computation, learning, and decision-making occur at or near the point of data generation.
+PeachBot Core is a **distributed, edge-first intelligence system** in which computation, state evolution, and decision-making occur at or near the point of data generation.
 
-The architecture enables:
-- Real-time inference in constrained environments  
-- Continuous local adaptation  
-- System-wide intelligence through controlled aggregation  
+The system is designed to operate across heterogeneous environments, from resource-constrained edge devices to full-scale systems, while maintaining consistent architectural behavior.
+
+It enables:
+
+* Real-time inference in constrained environments
+* Context-aware adaptive behavior
+* Structured system-wide intelligence through controlled aggregation
 
 ---
 
 ## Design Principles
 
-### 1. Edge-First Intelligence
-All primary computation, including inference and partial learning, occurs on edge devices.
+### 1. Edge-First Execution
+
+All primary computation, including inference and state evolution, occurs on edge devices.
 
 **Implications:**
-- Reduced latency  
-- Lower dependency on connectivity  
-- Context-aware decision-making  
+
+* Low-latency decision-making
+* Reduced dependency on connectivity
+* Preservation of local context
 
 ---
 
-### 2. Distributed Learning (FILA)
+### 2. Distributed Intelligence (FILA)
 
-PeachBot adopts a federated learning approach through FILA:
+PeachBot Core follows a federated coordination model:
 
-- Training occurs locally on edge nodes  
-- Only model updates are shared  
-- No raw data centralization  
+* Intelligence is generated locally at edge nodes
+* Only structured updates are shared
+* Raw data remains local
 
 **Outcome:**
-- Privacy-preserving learning  
-- Scalable distributed intelligence  
+
+* Privacy-preserving system design
+* Scalable distributed intelligence
+* Controlled global consistency
 
 ---
 
-### 3. Biologically-Inspired Adaptation (SBC)
+### 3. State-Centric Computation (SBC)
 
-Synthetic Biological Computation (SBC) introduces:
+Synthetic Biological Computation (SBC) defines the internal computational model.
 
-- State-aware computation  
-- Continuous adaptation  
-- Context-sensitive learning behavior  
+Instead of stateless inference, the system operates through **evolving structured state**.
 
-This enables systems to operate effectively in dynamic and uncertain environments.
+**Key properties:**
+
+* Signal-driven state updates
+* Temporal decay of signals
+* Weighted influence of inputs
+* Multi-signal interaction (relation tracking)
+* Priority-driven decision influence
+
+This enables adaptive, context-aware system behavior aligned with real-world dynamics.
 
 ---
 
 ### 4. Hardware–Software Co-Design (Edge SoC)
 
-Edge intelligence is tightly integrated with hardware:
+Execution is aligned with hardware constraints:
 
-- Embedded AI acceleration  
-- Sensor-level data processing  
-- Optimized execution under constraints  
+* Compatibility with microcontrollers, SBCs, and PC systems
+* Efficient execution under memory and latency limits
+* Support for future hardware acceleration
 
 ---
 
-### 5. Governed System Coordination
+### 5. Governed Coordination
 
-A centralized coordination layer ensures:
+A coordination layer ensures system integrity:
 
-- Model validation  
-- Policy enforcement  
-- Lifecycle management  
+* Model validation and version control
+* Policy enforcement
+* Lifecycle management
 
-The system remains distributed, but not uncontrolled.
+The system remains distributed, but governed.
 
 ---
 
@@ -75,164 +88,222 @@ The system remains distributed, but not uncontrolled.
 
 ### 1. Interface Layer
 
-Handles interaction with real-world systems:
+Handles real-world signal acquisition across domains:
 
-- Clinical data inputs (MedAI+)  
-- Environmental sensing (Eco)  
-- Agricultural systems (AgriAI)  
+* Clinical systems (MedAI+)
+* Environmental sensing (Eco)
+* Agricultural systems (AgriAI)
+* Biological and molecular data systems (Bio)
+
+**Bio inputs include:**
+
+* Gene expression data
+* Protein interaction networks
+* Biological signal streams
 
 **Responsibilities:**
-- Data acquisition  
-- Input normalization  
-- Preprocessing  
+
+* Signal capture
+* Input normalization
+* Preprocessing
 
 ---
 
-### 2. Edge Intelligence Layer
+### 2. Edge Intelligence Layer (SBC Engine)
 
 Core execution layer of the system.
 
 **Capabilities:**
-- On-device inference (Edge-GNN, signal models)  
-- Local adaptive learning (SBC-driven)  
-- Sensor fusion  
+
+* State-centric computation (SBC)
+* Signal processing and inference
+* Local adaptation and state evolution
+* Biological network processing (Bio module)
 
 **Characteristics:**
-- Operates under compute and power constraints  
-- Maintains localized system state  
+
+* Operates under resource constraints
+* Maintains persistent local state
+* Produces structured outputs for coordination
+* Supports graph-compatible representations
 
 ---
 
 ### 3. Coordination & Orchestration Layer
 
-Acts as the system governance layer.
+System governance and control layer.
 
 **Functions:**
-- Model version control  
-- Validation of edge updates  
-- Distributed node coordination  
-- Policy enforcement  
+
+* Validation of edge-generated updates
+* Policy enforcement
+* Node coordination
+* Model lifecycle management
 
 ---
 
-### 4. Cloud Aggregation Layer
+### 4. Cloud Aggregation Layer (FILA)
 
-Supports system-wide intelligence without centralizing control.
+Supports system-wide intelligence without centralization.
 
 **Responsibilities:**
-- Federated aggregation (FILA)  
-- Model validation  
-- Registry and redistribution  
 
-**Important Constraint:**
-The cloud does **not perform centralized training**.
+* Aggregation of structured updates
+* Model validation and registry
+* Controlled redistribution
+
+**Constraint:**
+The cloud supports coordination — not centralized training.
 
 ---
 
 ## Core Framework Integration
 
-### FILA (Federated Intelligence & Learning Architecture)
+### FILA — Federated Intelligence & Learning Architecture
 
-- Local training → edge nodes  
-- Update sharing → aggregation layer  
-- Global consistency → validated redistribution  
-
----
-
-### SBC (Synthetic Biological Computation)
-
-- Drives adaptive behavior at edge  
-- Maintains system state  
-- Enables continuous learning cycles  
+* Edge nodes generate structured updates
+* Aggregation occurs without raw data transfer
+* Validated updates are redistributed
 
 ---
 
-### Edge SoC Integration
+### SBC — Synthetic Biological Computation
 
-- Provides execution substrate  
-- Enables efficient real-time processing  
-- Supports deployment in constrained environments  
+* Maintains evolving system state
+* Enables temporal and weighted adaptation
+* Tracks relationships between signals
+* Produces priority-driven system behavior
 
 ---
 
-## Data Flow (System-Level)
+### Edge-GNN (Graph Learning Integration)
 
-1. Data is generated at the interface layer  
-2. Processed and analyzed at the edge  
-3. Local models updated via SBC mechanisms  
-4. Model updates transmitted to aggregation layer (FILA)  
-5. Aggregated model validated centrally  
-6. Updated models redistributed to edge nodes  
+The SBC framework produces graph-compatible structures:
+
+* Signals → nodes
+* Relationships → edges
+* Weights → attributes
+
+This enables integration with constraint-aware graph learning systems such as Edge-GNN, designed for operation under memory and latency constraints in edge environments.
+
+SBC provides structured state representation, while Edge-GNN provides the learning mechanism.
+
+---
+
+## Biological Intelligence (Bio)
+
+The Bio module extends PeachBot Core into computational biology and biological network analysis.
+
+It supports:
+
+* Representation of biological systems as interaction networks
+* Integration of multi-modal biological data
+* Edge-compatible biological data processing
+
+Through SBC:
+
+* Biological signals become structured state inputs
+* Relationships are captured as evolving interactions
+* System behavior reflects biological dynamics
+
+This enables compatibility with graph-based learning systems and future system-on-chip implementations for biological AI.
+
+---
+
+## Data Flow
+
+1. Signals are generated at the interface layer
+2. Processed and interpreted at the edge
+3. SBC updates system state
+4. State evolves through temporal and relational dynamics
+5. System priority is computed
+6. Decisions are generated locally
+7. Structured outputs are optionally exported
+8. Aggregation and validation occur via FILA
+9. Updated models are redistributed
+
+---
+
+## Execution Model
+
+PeachBot Core follows a state-driven execution pipeline:
+
+1. Input → structured signal
+2. Signal → SBC state update
+3. State → temporal + relational evolution
+4. State → priority computation
+5. Priority → decision output
+
+This ensures:
+
+* Context-aware behavior
+* Continuous adaptation
+* Edge-native operation
 
 ---
 
 ## System Lifecycle
 
 ### 1. Initialization
-- Edge nodes provisioned with baseline models  
-- Hardware configured (SoC integration)
 
----
+* Edge nodes provisioned with baseline configuration
 
 ### 2. Active Operation
-- Continuous inference at edge  
-- Real-time decision-making  
+
+* Continuous inference and state updates
+
+### 3. Local Adaptation
+
+* State evolves based on incoming signals
+
+### 4. Federated Coordination
+
+* Structured updates shared and validated
+
+### 5. Redistribution
+
+* Approved updates deployed across nodes
 
 ---
 
-### 3. Local Learning Cycle
-- Adaptive updates based on incoming data  
-- State-aware adjustments (SBC)
-
----
-
-### 4. Federated Update Cycle
-- Periodic sharing of model updates  
-- Aggregation and validation  
-
----
-
-### 5. Model Redistribution
-- Approved models deployed back to edge nodes  
-- Ensures system-wide consistency  
-
----
-
-## Deployment Perspective
+## Deployment Context
 
 PeachBot Core is designed for:
 
-- Low-connectivity environments  
-- Real-time decision systems  
-- Distributed sensing networks  
-- Clinical and environmental deployments  
+* Low-connectivity environments
+* Resource-constrained hardware (microcontrollers, SBCs, PCs)
+* Real-time decision systems
+* Distributed sensing and biological data systems
+* Computational biology and bioinformatics workflows
 
 ---
 
 ## Architectural Positioning
 
-PeachBot Core reflects a transition from:
+PeachBot Core represents a shift from:
 
 **Conventional AI Systems**
-- Centralized training  
-- Cloud dependency  
-- Data aggregation pipelines  
 
-to  
+* Centralized training
+* Cloud dependency
+* Stateless inference
 
-**Distributed Intelligence Systems**
-- Localized learning  
-- Federated coordination  
-- Edge-native execution  
+to
+
+**Distributed Edge Intelligence Systems**
+
+* Localized computation
+* State-driven adaptive behavior
+* Federated coordination
 
 ---
 
-## Summary
+## System Architecture Summary
 
-PeachBot Core establishes a system where:
+PeachBot Core combines:
 
-- Learning is **localized and continuous**  
-- Intelligence is **distributed and emergent**  
-- The cloud acts as **coordinator, not controller**  
+* Edge-first execution (where computation happens)
+* Synthetic Biological Computation (how intelligence emerges)
+* Federated Intelligence & Learning Architecture (how systems coordinate)
 
-This architecture supports scalable, real-world deployment of intelligent systems across multiple domains.
+This results in a distributed, adaptive intelligence system capable of operating across clinical, environmental, agricultural, and biological domains.

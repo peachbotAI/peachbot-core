@@ -1,7 +1,7 @@
 from core.node.banner import show_banner
 from core.node.mode import select_mode
 from core.io.input_handler import get_input
-from core.node.ui import print_state, print_alert, print_decision, print_divider
+from core.node.ui import print_context, print_state, print_alert, print_decision, print_divider
 
 from core.engine.runner import execute
 
@@ -79,6 +79,10 @@ def run():
 
             print("\n🧬 BIO INSIGHT")
             print(result["alert"]["message"])
+
+        # --- CONTEXT (ONLY FOR MEDAI / SBC) ---
+        if "context" in result:
+            print_context(result["context"])
 
         # --- DECISION (ONLY FOR MEDAI) ---
         decision = None

@@ -2,6 +2,20 @@ from colorama import Fore, Style, init
 
 init(autoreset=True)
 
+def print_context(context):
+    print("\n SBC CONTEXT")
+    if "active_keys" in context:
+        print(f"Active Signals : {context['active_keys']}")
+
+    if "history_length" in context:
+        print(f"History Length : {context['history_length']}")
+
+    if "relation_count" in context:    
+        print(f"Relations      : {context.get('relation_count', 0)}")
+
+    if "priority_score" in context:   
+        print(f"Priority Score : {context.get('priority_score', 0)}")
+
 
 def print_section(title):
     print(Fore.CYAN + Style.BRIGHT + f"\n=== {title} ===")

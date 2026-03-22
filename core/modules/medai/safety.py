@@ -1,20 +1,35 @@
-def evaluate(state):
-    symptoms = state["symptoms"]
-    severity = state["severity"]
+def evaluate(state, context=None):
+    severity = state.get("severity", {}).get("value", "low")
+    weight = state.get("severity", {}).get("effective_weight", 0)
 
-    if "fever" in symptoms and severity == "high":
+    priority = 0
+    relations = 0
+
+    if context:
+        priority = context.get("priority_score", 0)
+        relations = context.get("relation_count", 0)
+
+    # 🔥 PRIORITY-DRIVEN DECISION
+
+    if priority > 2.5:
         return {
             "level": "CRITICAL",
-            "message": "High fever detected. Immediate attention required."
+            "message": "System-wide critical condition detected"
         }
 
-    if "fever" in symptoms:
+    if severity == "high" and weight > 0.6:
+        return {
+            "level": "CRITICAL",
+            "message": "High severity condition"
+        }
+
+    if severity == "high" or relations >= 2:
         return {
             "level": "WARNING",
-            "message": "Fever present. Monitor condition."
+            "message": "Elevated multi-factor condition"
         }
 
     return {
         "level": "INFO",
-        "message": "No critical symptoms detected."
+        "message": "No critical condition"
     }

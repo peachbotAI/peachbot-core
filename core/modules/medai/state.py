@@ -1,18 +1,15 @@
-STATE = {
-    "symptoms": [],
-    "severity": "low",
-    "history": []
-}
+from core.sbc.engine import SBCState
+
+SBC_ENGINE = SBCState()
 
 
 def update_state(data):
-    for s in data["symptoms"]:
-        if s not in STATE["symptoms"]:
-            STATE["symptoms"].append(s)
-
-    STATE["severity"] = data["severity"]
-    STATE["history"].append(data)
+    SBC_ENGINE.update(data)
 
 
 def get_state():
-    return STATE
+    return SBC_ENGINE.get_state()
+
+
+def get_context():
+    return SBC_ENGINE.get_context()

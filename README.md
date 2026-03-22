@@ -33,28 +33,33 @@ to
 
 ## Core Architecture
 
-The system integrates four primary layers:
+PeachBot Core follows an edge-first, state-centric architecture composed of four interacting layers:
 
 ### 1. Interface Layer
-- Real-world data acquisition (clinical, environmental, agricultural)
+- Real-world signal acquisition (clinical, environmental, agricultural)
+- Converts raw inputs into structured system signals
 
-### 2. Edge Intelligence Layer
-- On-device inference and adaptive learning  
-- Edge-GNN and signal processing models  
+### 2. Edge Intelligence Layer (SBC Engine)
+- Synthetic Biological Computation (SBC) engine
+- State-centric computation model
+- Signal-driven state updates with:
+  - temporal decay
+  - weighted influence
+  - multi-signal relationships
+- Priority-driven decision influence
 
 ### 3. Coordination Layer
-- Policy enforcement  
-- Model lifecycle management  
-- Distributed system orchestration  
+- Policy enforcement and safety evaluation
+- Session management and audit logging
+- Distributed orchestration across nodes (FILA-ready)
 
-### 4. Cloud Aggregation Layer
-- Federated aggregation (FILA)  
-- Model validation and registry  
-- Controlled model redistribution  
+### 4. Cloud Aggregation Layer (FILA)
+- Aggregation of structured edge outputs
+- Model validation and registry
+- Controlled redistribution of updates
 
-> The cloud supports coordination — not centralized training.
-
-All primary computation, state evolution, and decision-making occur at the edge, with cloud components limited to aggregation and coordination.
+> All primary computation, state evolution, and decision-making occur at the edge.
+> The cloud performs coordination, not centralized training.
 
 ---
 
@@ -70,23 +75,28 @@ All primary computation, state evolution, and decision-making occur at the edge,
 
 ### SBC — Synthetic Biological Computation
 
-SBC defines the internal computational model of PeachBot Core, where system behavior evolves through structured state transitions rather than static inference.
+SBC defines the core computational model of PeachBot Core.
 
-Key characteristics:
+Unlike traditional AI systems that rely on stateless inference, SBC operates as a state-centric engine where system behavior emerges through evolving structured state.
+
+Key properties:
 
 - State-centric computation  
-  → system intelligence is represented as evolving structured state (not isolated predictions)
+  → system intelligence is represented as evolving structured state
 
-- Signal-driven updates  
-  → inputs are interpreted as biological or environmental signals that modify system state
+- Temporal dynamics  
+  → signals decay over time, preserving recency relevance
 
-- Context persistence  
-  → historical state influences current decision pathways
+- Weighted signal influence  
+  → higher-intensity signals exert stronger impact on system behavior
 
-- Tiered response behavior  
-  → outputs are generated through layered evaluation (e.g., safety tiers, alert levels)
+- Multi-signal interaction  
+  → relationships between signals are tracked, forming a graph-like structure
 
-SBC enables the system to behave more like an adaptive biological process than a stateless AI model.
+- Priority-driven decision model  
+  → decisions are influenced by aggregate system state rather than isolated rules
+
+This model enables adaptive, context-aware behavior aligned with real-world biological and environmental systems.
 
 ---
 
@@ -117,6 +127,29 @@ models/ → Edge AI and signal processing models
 deployment/ → Infrastructure and configuration
 ```
 
+
+---
+## Graph Integration (Edge-GNN Alignment)
+
+The SBC framework produces a structured representation of system state and signal relationships that is inherently graph-compatible.
+
+- Signals → nodes  
+- Relationships → edges  
+- Weights → node/edge attributes  
+
+This enables seamless integration with graph-based learning systems such as Edge-GNN.
+
+The Edge-GNN framework introduces constraint-aware graph learning optimized for resource-constrained environments, balancing predictive performance with computational efficiency.
+
+This alignment allows PeachBot Core to:
+
+- Transition from rule-based evaluation to graph-based learning  
+- Operate within CPU-only and edge-class hardware constraints  
+- Maintain deployability across heterogeneous environments  
+
+Edge-GNN provides the learning layer, while SBC provides the structured state representation.
+
+Together, they form a unified edge-native intelligence system.
 
 ---
 
@@ -153,14 +186,21 @@ PeachBot Core supports:
 ---
 ## Execution Model
 
-PeachBot Core operates using an edge-first execution model:
+PeachBot Core operates using an edge-first, state-driven execution model:
 
-- All primary computation occurs locally on-device  
-- System state is maintained and evolved at the edge  
-- Outputs are generated through structured evaluation pipelines  
-- Only structured summaries are exported for aggregation  
+1. Inputs are captured as structured signals  
+2. Signals update the SBC state engine  
+3. State evolves through temporal decay and interaction  
+4. System priority is computed from aggregate state  
+5. Decisions are generated through safety and policy layers  
+6. Structured outputs are optionally exported via FILA  
 
-This ensures low-latency operation, privacy preservation, and deployment viability in constrained environments.
+This model ensures:
+
+- Low-latency operation  
+- Context-aware decision-making  
+- Minimal data centralization  
+- Compatibility with edge-constrained environments  
 
 ---
 
@@ -170,7 +210,8 @@ This ensures low-latency operation, privacy preservation, and deployment viabili
 - Federated learning (FILA)  
 - Biologically-inspired computation (SBC)  
 - Hardware–software co-design  
-- Deployment-oriented architecture  
+- Deployment-oriented architecture
+- State-centric computation (SBC) with temporal, weighted, and relational dynamics    
 
 ---
 ## Design Philosophy
@@ -213,6 +254,18 @@ These systems operate in:
 - Heterogeneous edge environments (microcontrollers, SBCs, and PC-based systems)  
 
 ---
+## System Architecture Summary
+
+PeachBot Core combines:
+
+- Edge-first execution (where computation happens)  
+- Synthetic Biological Computation (how intelligence emerges)  
+- Federated Intelligence & Learning Architecture (how systems coordinate)  
+
+This results in a distributed, adaptive intelligence system capable of operating across heterogeneous edge environments.
+
+---
+
 ## Contributing
 
 Contributions are welcome in areas including:

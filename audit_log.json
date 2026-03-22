@@ -1,0 +1,145 @@
+[
+  {
+    "timestamp": "2026-03-22T12:49:13.196763",
+    "event": {
+      "alert": {
+        "level": "WARNING",
+        "message": "Fever present. Monitor condition."
+      },
+      "decision": "ack",
+      "reason": ""
+    }
+  },
+  {
+    "timestamp": "2026-03-22T12:49:33.516005",
+    "event": {
+      "alert": {
+        "level": "INFO",
+        "message": "No critical symptoms detected."
+      },
+      "decision": "ack",
+      "reason": ""
+    }
+  },
+  {
+    "timestamp": "2026-03-22T12:50:22.146691",
+    "event": {
+      "alert": {
+        "level": "CRITICAL",
+        "message": "High fever detected. Immediate attention required."
+      },
+      "decision": "override",
+      "reason": "instrument error"
+    }
+  },
+  {
+    "timestamp": "2026-03-22T12:59:47.354418",
+    "event": {
+      "alert": {
+        "level": "CRITICAL",
+        "message": "High severity condition (strong signal)"
+      },
+      "decision": "ack",
+      "reason": ""
+    }
+  },
+  {
+    "timestamp": "2026-03-22T13:07:04.220137",
+    "event": {
+      "alert": {
+        "level": "INFO",
+        "message": "No critical condition"
+      },
+      "decision": "ack",
+      "reason": ""
+    }
+  },
+  {
+    "timestamp": "2026-03-22T13:07:22.766195",
+    "event": {
+      "alert": {
+        "level": "INFO",
+        "message": "No critical condition"
+      },
+      "decision": "ack",
+      "reason": ""
+    }
+  },
+  {
+    "timestamp": "2026-03-22T13:08:34.461172",
+    "event": {
+      "alert": {
+        "level": "WARNING",
+        "message": "High severity condition detected"
+      },
+      "decision": "ack",
+      "reason": ""
+    }
+  },
+  {
+    "timestamp": "2026-03-22T13:08:51.416348",
+    "event": {
+      "alert": {
+        "level": "INFO",
+        "message": "No critical condition"
+      },
+      "decision": "ack",
+      "reason": ""
+    }
+  },
+  {
+    "timestamp": "2026-03-22T13:19:30.650660",
+    "event": {
+      "alert": {
+        "level": "INFO",
+        "message": "No critical condition"
+      },
+      "decision": "ack",
+      "reason": ""
+    }
+  },
+  {
+    "timestamp": "2026-03-22T13:19:38.857190",
+    "event": {
+      "alert": {
+        "level": "INFO",
+        "message": "No critical condition"
+      },
+      "decision": "ack",
+      "reason": ""
+    }
+  },
+  {
+    "timestamp": "2026-03-22T13:19:45.111942",
+    "event": {
+      "alert": {
+        "level": "INFO",
+        "message": "No critical condition"
+      },
+      "decision": "ack",
+      "reason": ""
+    }
+  },
+  {
+    "timestamp": "2026-03-22T13:20:03.653721",
+    "event": {
+      "alert": {
+        "level": "INFO",
+        "message": "No critical condition"
+      },
+      "decision": "ack",
+      "reason": ""
+    }
+  },
+  {
+    "timestamp": "2026-03-22T13:20:23.514108",
+    "event": {
+      "alert": {
+        "level": "CRITICAL",
+        "message": "High severity condition"
+      },
+      "decision": "ack",
+      "reason": ""
+    }
+  }
+]
